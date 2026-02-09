@@ -1,0 +1,114 @@
+.about-section {
+  background: #0b0f14;
+  color: white;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about-title span {
+  color: #00ffc6;
+}
+
+.about-desc {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.about-buttons {
+  margin-top: 25px;
+}
+
+.btn-main {
+  background: #00ffc6;
+  color: black;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0, 255, 198, 0.6);
+}
+
+.typing-text {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 15px;
+  color: white;
+}
+
+.typing-text span {
+  color: #00ffc6;
+}
+
+/* Flip Effect */
+.photo-flip-wrapper {
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.photo-flip-inner {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.photo-flip-wrapper:hover .photo-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.about-photo {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00ffc6;
+  backface-visibility: hidden;
+  transition: transform 0.3s ease;
+}
+
+.photo-back {
+  transform: rotateY(180deg);
+}
+
+/* Social Icons below photo */
+.photo-social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-left: -400px;
+}
+
+.photo-social-icons .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 255, 198, 0.1);
+  color: #00ffc6;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.photo-social-icons .social-icon:hover {
+  background: #00ffc6;
+  color: #0b0f14;
+  transform: scale(1.2);
+}

@@ -1,0 +1,103 @@
+.experience-section {
+  padding: 90px 20px;
+  background: #111;
+  color: white;
+}
+
+.exp-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #00ffc6;
+}
+
+.exp-subtitle {
+  color: #aaa;
+  margin-bottom: 60px;
+  font-size: 1.1rem;
+}
+
+/* Timeline Container */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+  padding-left: 25px;
+}
+
+/* Timeline Line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: rgba(0, 255, 198, 0.4);
+}
+
+/* Timeline Card */
+.timeline-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 255, 198, 0.2);
+  position: relative;
+  transition: 0.35s ease;
+}
+
+/* Dot */
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 30px;
+  width: 16px;
+  height: 16px;
+  background: #00ffc6;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 255, 198, 0.7);
+}
+
+/* Hover Effect */
+.timeline-card:hover {
+  transform: translateX(10px) scale(1.02);
+  border: 1px solid #00ffc6;
+  box-shadow: 0px 0px 25px rgba(0, 255, 198, 0.5);
+}
+
+/* Company */
+.company {
+  color: #00ffc6;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.company span {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Description */
+.timeline-card p {
+  color: #ddd;
+  margin: 0;
+}
+
+.exp-points {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.exp-points li {
+  color: #ddd;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* Custom Bullet Glow */
+.exp-points li::marker {
+  color: #00ffc6;
+}

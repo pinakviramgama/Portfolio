@@ -1,0 +1,21 @@
+.about-section {
+  background-color: #0b0f14;
+  color: white;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #007ACC;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #61DAFB;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}

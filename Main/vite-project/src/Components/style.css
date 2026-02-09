@@ -1,0 +1,56 @@
+footer a:hover {
+  color: #00ffcc !important;
+  transition: 0.3s;
+}
+
+.portfolio-navbar {
+  background: rgba(15, 15, 15, 0.85);
+  padding: 15px 0;
+  transition: 0.3s ease;
+}
+
+.logo {
+  font-size: 1.6rem;
+  color: #00ffc6 !important;
+  letter-spacing: 1px;
+}
+
+.nav-hover {
+  color: white !important;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-hover:hover {
+  color: #00ffc6 !important;
+}
+
+.nav-hover::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #00ffc6;
+  transition: 0.3s;
+}
+
+.nav-hover:hover::after {
+  width: 100%;
+}
+
+.resume-btn {
+  background: #00ffc6;
+  color: black !important;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 8px 18px;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
