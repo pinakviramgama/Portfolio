@@ -1,4 +1,4 @@
-import "./Experience.css";
+import "./experience.css";
 
 function Experience() {
  const experiences = [
