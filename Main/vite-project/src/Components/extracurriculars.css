@@ -1,20 +1,23 @@
 .extracurriculars-section {
   padding: 80px 20px;
-  background: #0f0f0f;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 }
 
+/* Title */
 .section-title {
   font-size: 2.5rem;
-  color: #00ffc6;
+  color: var(--accent);
   text-align: center;
   margin-bottom: 40px;
 }
 
+/* Wrapper */
 .achievements-slider-wrapper {
   position: relative;
 }
 
+/* Arrows */
 .arrow-btn {
   position: absolute;
   top: 50%;
@@ -23,26 +26,32 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid #00ffc6;
-  background: rgba(0, 255, 198, 0.1);
+  border: 2px solid var(--accent);
+  background: rgba(0, 255, 198, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #00ffc6;
+  color: var(--accent);
   transition: 0.3s ease;
 }
 
 .arrow-btn:hover {
-  background: #00ffc6;
+  background: var(--accent);
   color: black;
-  transform: translateY(-50%) scale(1.2);
-  box-shadow: 0 0 15px #00ffc6;
+  transform: translateY(-50%) scale(1.15);
+  box-shadow: 0 0 18px rgba(0, 255, 198, 0.7);
 }
 
-.arrow-btn.left { left: -20px; }
-.arrow-btn.right { right: -20px; }
+.arrow-btn.left {
+  left: -20px;
+}
 
+.arrow-btn.right {
+  right: -20px;
+}
+
+/* Slider */
 .achievements-slider {
   display: flex;
   gap: 25px;
@@ -51,50 +60,118 @@
   scroll-snap-type: x mandatory;
 }
 
+/* Scrollbar */
 .achievements-slider::-webkit-scrollbar {
   height: 8px;
 }
 
 .achievements-slider::-webkit-scrollbar-thumb {
-  background: rgba(0, 255, 198, 0.4);
+  background: rgba(0, 255, 198, 0.35);
   border-radius: 10px;
 }
 
+/* Achievement Card */
 .achievement-card {
   min-width: 350px;
   max-width: 350px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--glass);
   border-radius: 20px;
   padding: 25px;
-  border: 1px solid rgba(0, 255, 198, 0.2);
+  border: 1px solid rgba(0, 255, 198, 0.25);
   scroll-snap-align: start;
   transition: 0.35s ease;
 }
 
 .achievement-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  border: 1px solid #00ffc6;
-  box-shadow: 0 0 25px rgba(0, 255, 198, 0.6);
+  transform: translateY(-8px) scale(1.04);
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 25px rgba(0, 255, 198, 0.5);
 }
 
+/* Heading */
 .achievement-card h3 {
   margin: 0;
   font-size: 1.2rem;
-  color: #00ffc6;
+  color: var(--accent);
 }
 
+/* Organization */
 .achievement-card .org {
   font-size: 0.85rem;
-  color: #aaa;
+  color: var(--muted-text);
 }
 
+/* List */
 .achievement-card ul {
   margin-top: 10px;
   padding-left: 20px;
   list-style-type: disc;
-  color: #ddd;
+  color: var(--muted-text);
 }
 
 .achievement-card ul li {
   margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* ============================ */
+/* 📱 Mobile Responsive */
+/* ============================ */
+
+@media (max-width: 768px) {
+  .extracurriculars-section {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  /* Hide arrows on mobile */
+  .arrow-btn {
+    display: none;
+  }
+
+  /* Smooth swipe */
+  .achievements-slider {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  /* Card becomes full width */
+  .achievement-card {
+    min-width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    scroll-snap-align: center;
+    padding: 20px;
+  }
+
+  .achievement-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .achievement-card ul {
+    font-size: 0.95rem;
+  }
+}
+
+.section-title {
+  color: var(--accent);
+}
+
+.achievement-card {
+  background: var(--card);
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+.arrow-btn {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.arrow-btn:hover {
+  background: var(--accent);
+  color: white;
 }

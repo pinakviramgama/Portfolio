@@ -27,3 +27,9 @@ body {
   color: var(--text-color);
   transition: all 0.3s ease;
 }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
+}

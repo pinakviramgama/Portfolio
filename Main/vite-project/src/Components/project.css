@@ -1,25 +1,28 @@
 .projects-section {
   padding: 120px 20px;
-  background: #0f0f0f;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 }
 
+/* Title */
 .projects-title {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #00ffc6;
+  color: var(--accent);
 }
 
 .projects-subtitle {
-  color: #aaa;
+  color: var(--muted-text);
   margin-bottom: 50px;
   font-size: 1.1rem;
 }
 
+/* Wrapper */
 .projects-slider-wrapper {
   position: relative;
 }
 
+/* Arrows */
 .arrow-btn {
   position: absolute;
   top: 50%;
@@ -28,26 +31,32 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid #00ffc6;
-  background: rgba(0, 255, 198, 0.1);
+  border: 2px solid var(--accent);
+  background: rgba(0, 255, 198, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #00ffc6;
+  color: var(--accent);
   transition: 0.3s ease;
 }
 
 .arrow-btn:hover {
-  background: #00ffc6;
+  background: var(--accent);
   color: black;
-  transform: translateY(-50%) scale(1.2);
-  box-shadow: 0 0 15px #00ffc6;
+  transform: translateY(-50%) scale(1.15);
+  box-shadow: 0 0 18px rgba(0, 255, 198, 0.7);
 }
 
-.arrow-btn.left { left: -20px; }
-.arrow-btn.right { right: -20px; }
+.arrow-btn.left {
+  left: -20px;
+}
 
+.arrow-btn.right {
+  right: -20px;
+}
+
+/* Slider */
 .projects-slider {
   display: flex;
   gap: 25px;
@@ -56,44 +65,48 @@
   scroll-snap-type: x mandatory;
 }
 
+/* Scrollbar */
 .projects-slider::-webkit-scrollbar {
   height: 8px;
 }
 
 .projects-slider::-webkit-scrollbar-thumb {
-  background: rgba(0, 255, 198, 0.4);
+  background: rgba(0, 255, 198, 0.35);
   border-radius: 10px;
 }
 
+/* Card */
 .project-card {
   min-width: 450px;
   max-width: 450px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--glass);
   border-radius: 22px;
   padding: 45px;
-  border: 1px solid rgba(0, 255, 198, 0.2);
+  border: 1px solid rgba(0, 255, 198, 0.25);
   scroll-snap-align: start;
   transition: 0.35s ease;
   margin: 30px;
 }
 
 .project-card:hover {
-  transform: translateY(-12px) scale(1.05);
-  border: 1px solid #00ffc6;
-  box-shadow: 0px 0px 30px rgba(0, 255, 198, 0.6);
+  transform: translateY(-10px) scale(1.04);
+  border: 1px solid var(--accent);
+  box-shadow: 0px 0px 30px rgba(0, 255, 198, 0.5);
 }
 
+/* Duration */
 .project-duration {
   font-weight: 500;
   font-size: 0.95rem;
-  color: #aaa;
+  color: var(--muted-text);
   margin-bottom: 15px;
 }
 
+/* Description */
 .project-desc {
   margin: 15px 0;
   padding-left: 20px;
-  color: #ddd;
+  color: var(--muted-text);
   line-height: 1.6;
 }
 
@@ -102,7 +115,10 @@
   list-style-type: disc;
 }
 
-.tech-stack { margin-bottom: 25px; }
+/* Tech Stack */
+.tech-stack {
+  margin-bottom: 25px;
+}
 
 .tech-badge {
   display: inline-block;
@@ -111,23 +127,25 @@
   font-size: 0.85rem;
   margin: 6px 6px 0 0;
   background: rgba(0, 255, 198, 0.12);
-  color: #00ffc6;
+  color: var(--accent);
   border: 1px solid rgba(0, 255, 198, 0.25);
   transition: 0.3s ease;
 }
 
 .tech-badge:hover {
-  background: #00ffc6;
+  background: var(--accent);
   color: black;
-  transform: scale(1.15);
-  box-shadow: 0 0 15px rgba(0, 255, 198, 0.8);
+  transform: scale(1.12);
+  box-shadow: 0 0 15px rgba(0, 255, 198, 0.7);
 }
 
+/* Links */
 .project-links {
   display: flex;
   gap: 12px;
 }
 
+/* Button Glow */
 .btn-glow {
   flex: 1;
   text-align: center;
@@ -135,17 +153,18 @@
   border-radius: 14px;
   font-weight: 600;
   text-decoration: none;
-  border: 1px solid #00ffc6;
-  color: #00ffc6;
+  border: 1px solid var(--accent);
+  color: var(--accent);
   transition: 0.3s ease;
 }
 
 .btn-glow:hover {
-  background: #00ffc6;
+  background: var(--accent);
   color: black;
-  box-shadow: 0px 0px 18px rgba(0, 255, 198, 0.8);
+  box-shadow: 0px 0px 18px rgba(0, 255, 198, 0.6);
 }
 
+/* Live Button */
 .btn-live {
   flex: 1;
   text-align: center;
@@ -153,44 +172,48 @@
   border-radius: 14px;
   font-weight: 600;
   text-decoration: none;
-  background: linear-gradient(135deg, #00ffc6, #00aaff);
+  background: linear-gradient(135deg, var(--accent), #00aaff);
   color: black;
   transition: 0.3s ease;
 }
 
 .btn-live:hover {
-  transform: scale(1.07);
-  box-shadow: 0px 0px 20px rgba(0, 255, 198, 0.8);
+  transform: scale(1.06);
+  box-shadow: 0px 0px 20px rgba(0, 255, 198, 0.7);
 }
 
-@media (max-width: 768px) {
+/* ============================ */
+/* 📱 Mobile Responsive */
+/* ============================ */
 
+@media (max-width: 768px) {
   .projects-section {
     padding: 70px 15px;
   }
 
   .projects-title {
     font-size: 2rem;
+    text-align: center;
   }
 
   .projects-subtitle {
     font-size: 1rem;
     margin-bottom: 30px;
+    text-align: center;
   }
 
-  /* Hide arrows on mobile */
+  /* Hide arrows */
   .arrow-btn {
     display: none;
   }
 
-  /* Slider becomes smooth swipe */
+  /* Smooth swipe */
   .projects-slider {
     gap: 15px;
     padding: 10px;
-    scroll-snap-type: x mandatory;
   }
 
-  /* Project Card full width */
+  /* Card full width */
   .project-card {
     min-width: 90%;
     max-width: 90%;
@@ -199,18 +222,13 @@
     scroll-snap-align: center;
   }
 
-  .project-desc {
-    padding-left: 15px;
-    font-size: 0.95rem;
-  }
-
   /* Tech badges smaller */
   .tech-badge {
     font-size: 0.75rem;
     padding: 6px 10px;
   }
 
-  /* Buttons stack vertically */
+  /* Buttons stacked */
   .project-links {
     flex-direction: column;
     gap: 10px;

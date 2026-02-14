@@ -1,6 +1,6 @@
 .about-section {
-  background: #0b0f14;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .about-title {
@@ -10,12 +10,12 @@
 }
 
 .about-title span {
-  color: #00ffc6;
+  color: var(--accent);
 }
 
 .about-desc {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--muted-text);
   line-height: 1.7;
   margin-bottom: 15px;
 }
@@ -25,8 +25,8 @@
 }
 
 .btn-main {
-  background: #00ffc6;
-  color: black;
+  background: var(--accent);
+  color: var(--btn-text);
   padding: 12px 25px;
   border-radius: 12px;
   font-weight: 600;
@@ -42,11 +42,11 @@
   font-size: 1.7rem;
   font-weight: 700;
   margin-top: 15px;
-  color: white;
+  color: var(--text);
 }
 
 .typing-text span {
-  color: #00ffc6;
+  color: var(--accent);
 }
 
 /* Flip Effect */
@@ -76,98 +76,45 @@
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #00ffc6;
+  border: 3px solid var(--accent);
   backface-visibility: hidden;
-  transition: transform 0.3s ease;
 }
 
 .photo-back {
   transform: rotateY(180deg);
 }
 
-/* Social Icons below photo */
+/* Social Icons */
 .photo-social-icons {
   margin-top: 20px;
   display: flex;
   gap: 15px;
   justify-content: center;
-  margin-left: -400px;
 }
 
 .photo-social-icons .social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(0, 255, 198, 0.1);
-  color: #00ffc6;
+  background: var(--glass);
+  color: var(--accent);
   font-size: 1.5rem;
-  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
 }
 
 .photo-social-icons .social-icon:hover {
-  background: #00ffc6;
-  color: #0b0f14;
+  background: var(--accent);
+  color: var(--bg);
   transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
-
-  .about-title {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .about-desc {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .typing-text {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-
-  /* Make image smaller */
-  .about-photo {
-    width: 180px;
-    height: 180px;
-  }
-
-  .photo-flip-inner {
-    width: 180px;
-    height: 180px;
-  }
-
-  /* Fix icons alignment */
-  .photo-social-icons {
-    margin-left: 0;   /* REMOVE NEGATIVE */
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  /* Smaller icons */
-  .photo-social-icons .social-icon {
-    width: 42px;
-    height: 42px;
-    font-size: 1.2rem;
-  }
-
-  /* Center buttons */
-  .about-buttons {
-    text-align: center;
-  }
-
-  .btn-main {
-    padding: 10px 20px;
-    font-size: 0.95rem;
-  }
-}
-
-.about-photo {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
+.photo-social-icons {
+  margin-top: 20px;
+  margin-bottom: 18px; /* 🔥 button से gap */
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start; /* left aligned */
 }

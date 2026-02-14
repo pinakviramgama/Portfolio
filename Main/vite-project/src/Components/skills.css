@@ -1,7 +1,7 @@
 .skills-section {
   padding: 90px 20px;
-  background: #0f0f0f;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
   overflow: hidden;
 }
 
@@ -14,11 +14,11 @@
 .skills-title {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #00ffc6;
+  color: var(--accent);
 }
 
 .skills-subtitle {
-  color: #aaa;
+  color: var(--muted-text);
   margin-bottom: 60px;
   font-size: 1.1rem;
 }
@@ -42,8 +42,8 @@
 /* Track */
 .skills-track {
   display: flex;
-  width: fit-content;
-  animation: marquee 18s linear infinite;
+  width: max-content;
+  animation: marquee 20s linear infinite;
 }
 
 /* Reverse row */
@@ -51,7 +51,7 @@
   animation-direction: reverse;
 }
 
-/* Infinite Scroll */
+/* Infinite Scroll Animation */
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -69,8 +69,10 @@
   margin-right: 25px;
   padding: 25px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 255, 198, 0.2);
+
+  background: var(--glass);
+  border: 1px solid rgba(0, 255, 198, 0.25);
+
   text-align: center;
   transition: 0.3s;
 }
@@ -78,13 +80,14 @@
 .skill-card:hover,
 .skill-card-2:hover {
   transform: scale(1.08);
-  border: 1px solid #00ffc6;
+  border: 1px solid var(--accent);
 }
 
 /* Icon */
 .skill-icon {
   font-size: 3rem;
   margin-bottom: 10px;
+  color: var(--accent);
 }
 
 /* Mobile Fix */
@@ -100,6 +103,6 @@
   }
 
   .skills-track {
-    animation-duration: 25s;
+    animation-duration: 30s;
   }
 }

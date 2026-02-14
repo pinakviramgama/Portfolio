@@ -66,3 +66,286 @@
   transform: scale(1.08);
 }
 
+.offcanvas {
+  width: 260px !important;
+}
+
+.offcanvas-body .nav-link {
+  font-size: 1.1rem;
+  padding: 10px 0;
+  color: white;
+}
+
+.offcanvas-body .nav-link:hover {
+  color: #00ffc6;
+}
+
+.theme-btn {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  padding: 8px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background: var(--accent);
+  color: black;
+}
+
+/* Sidebar */
+.offcanvas {
+  width: 270px !important;
+  background: #05070a !important;
+  border-left: 1px solid rgba(0, 255, 198, 0.2);
+}
+
+/* Sidebar Links */
+.offcanvas-body .nav-link {
+  font-size: 1.15rem;
+  padding: 12px 0;
+  color: white;
+  transition: 0.3s;
+}
+
+.offcanvas-body .nav-link:hover {
+  color: #00ffc6;
+}
+
+/* Resume Button inside Sidebar */
+.offcanvas-body .resume-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+}
+
+/* ============================ */
+/* Navbar Base */
+/* ============================ */
+
+.custom-navbar {
+  background: var(--bg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  padding: 18px 0;
+  transition: 0.3s ease;
+}
+
+/* Remove Bootstrap Shadow */
+.custom-navbar.shadow {
+  box-shadow: none !important;
+}
+
+/* ============================ */
+/* Logo */
+/* ============================ */
+
+.logo {
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: var(--text) !important;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+/* ============================ */
+/* Nav Links */
+/* ============================ */
+
+.nav-hover {
+  color: var(--text) !important;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Underline Animation */
+.nav-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: 0.3s ease;
+}
+
+.nav-hover:hover::after {
+  width: 100%;
+}
+
+.nav-hover:hover {
+  color: var(--accent) !important;
+}
+
+/* ============================ */
+/* Resume Button */
+/* ============================ */
+
+.resume-btn {
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: var(--accent);
+  color: var(--btn-text);
+
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  transform: scale(1.07);
+  opacity: 0.9;
+}
+
+/* ============================ */
+/* Theme Toggle Button */
+/* ============================ */
+
+.theme-btn {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+
+  padding: 8px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background: var(--accent);
+  color: var(--btn-text);
+}
+
+/* ============================ */
+/* Sidebar (Offcanvas) */
+/* ============================ */
+
+.offcanvas {
+  width: 270px !important;
+  background: var(--bg) !important;
+
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Sidebar Links */
+.offcanvas-body .nav-link {
+  font-size: 1.15rem;
+  padding: 12px 0;
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.offcanvas-body .nav-link:hover {
+  color: var(--accent);
+}
+
+/* Resume Button inside Sidebar */
+.offcanvas-body .resume-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+}
+
+/* ============================ */
+/* Mobile Fix */
+/* ============================ */
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 14px 0;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .resume-btn {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+}
+
+.navbar-toggler {
+  border: 1px solid var(--accent) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  position: relative;
+  width: 26px;
+  height: 2px;
+  background: var(--text);
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 26px;
+  height: 2px;
+  background: var(--text);
+  transition: 0.3s;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Desktop Menu Default */
+.desktop-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+
+/* Mobile Button Hidden on Desktop */
+.mobile-toggler {
+  display: none;
+}
+
+/* Sidebar Default Hidden */
+.mobile-sidebar {
+  display: none;
+}
+
+/* ================= MOBILE SCREEN ================= */
+@media (max-width: 991px) {
+
+  /* Desktop Menu Hide */
+  .desktop-menu {
+    display: none !important;
+  }
+
+  /* Show Hamburger */
+  .mobile-toggler {
+    display: block;
+  }
+
+  /* Sidebar Enable */
+  .mobile-sidebar {
+    display: block;
+    background: var(--bg);
+    color: var(--text);
+    width: 270px !important;
+  }
+
+  .btn-close {
+    filter: invert(1);
+  }
+}
+
