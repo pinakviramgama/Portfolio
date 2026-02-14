@@ -47,8 +47,8 @@ function Header() {
             <li className="nav-item"><a className="nav-link nav-hover" href="#skills">Skills</a></li>
             <li className="nav-item"><a className="nav-link nav-hover" href="#experience">Experience</a></li>
             <li className="nav-item"><a className="nav-link nav-hover" href="#projects">Projects</a></li>
-            <li className="nav-item"><a className="nav-link nav-hover" href="#contact">Contact</a></li>
             <li className="nav-item"><a className="nav-link nav-hover" href="#extracurriculars">Achievements</a></li>
+            <li className="nav-item"><a className="nav-link nav-hover" href="#contact">Contact</a></li>
 
             {/* Resume Button */}
             <li className="nav-item">
