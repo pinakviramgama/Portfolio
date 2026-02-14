@@ -162,3 +162,64 @@
   transform: scale(1.07);
   box-shadow: 0px 0px 20px rgba(0, 255, 198, 0.8);
 }
+
+@media (max-width: 768px) {
+
+  .projects-section {
+    padding: 70px 15px;
+  }
+
+  .projects-title {
+    font-size: 2rem;
+  }
+
+  .projects-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  /* Hide arrows on mobile */
+  .arrow-btn {
+    display: none;
+  }
+
+  /* Slider becomes smooth swipe */
+  .projects-slider {
+    gap: 15px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  /* Project Card full width */
+  .project-card {
+    min-width: 90%;
+    max-width: 90%;
+    padding: 25px;
+    margin: 0 auto;
+    scroll-snap-align: center;
+  }
+
+  .project-desc {
+    padding-left: 15px;
+    font-size: 0.95rem;
+  }
+
+  /* Tech badges smaller */
+  .tech-badge {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  /* Buttons stack vertically */
+  .project-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-glow,
+  .btn-live {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}

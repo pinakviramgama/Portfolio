@@ -43,11 +43,12 @@ function Header() {
         <div className="collapse navbar-collapse" id="navMenu">
           <ul className="navbar-nav ms-auto gap-4 align-items-center">
 
-            <li className="nav-item"><a className="nav-link nav-hover" href="#about">About</a></li>
+            <li className="nav-item"><a className="nav-link nav-hover" href="/">About</a></li>
             <li className="nav-item"><a className="nav-link nav-hover" href="#skills">Skills</a></li>
-            <li className="nav-item"><a className="nav-link nav-hover" href="#projects">Projects</a></li>
             <li className="nav-item"><a className="nav-link nav-hover" href="#experience">Experience</a></li>
+            <li className="nav-item"><a className="nav-link nav-hover" href="#projects">Projects</a></li>
             <li className="nav-item"><a className="nav-link nav-hover" href="#contact">Contact</a></li>
+            <li className="nav-item"><a className="nav-link nav-hover" href="#extracurriculars">Achievements</a></li>
 
             {/* Resume Button */}
             <li className="nav-item">

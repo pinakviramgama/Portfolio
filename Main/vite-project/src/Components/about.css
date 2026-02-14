@@ -112,3 +112,62 @@
   color: #0b0f14;
   transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+
+  .about-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-desc {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .typing-text {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  /* Make image smaller */
+  .about-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .photo-flip-inner {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Fix icons alignment */
+  .photo-social-icons {
+    margin-left: 0;   /* REMOVE NEGATIVE */
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* Smaller icons */
+  .photo-social-icons .social-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  /* Center buttons */
+  .about-buttons {
+    text-align: center;
+  }
+
+  .btn-main {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}

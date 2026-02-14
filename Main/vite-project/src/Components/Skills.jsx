@@ -50,8 +50,9 @@ const skills = [
         </p>
 
               <div className="skills-scroll-wrapper">
-  {/* Left row */}
-  <div className="skills-scroll">
+
+          <div className="skills-scroll">
+  <div className="skills-track">
     {scrollSkills.map((skill, index) => (
       <div key={index} className="skill-card">
         <div className="skill-icon" style={{ color: skill.color }}>
@@ -61,9 +62,10 @@ const skills = [
       </div>
     ))}
   </div>
+</div>
 
-  {/* Right row */}
-  <div className="scroll-again">
+<div className="scroll-again">
+  <div className="skills-track reverse">
     {scrollSkills.map((skill, index) => (
       <div key={index} className="skill-card-2">
         <div className="skill-icon" style={{ color: skill.color }}>
@@ -73,6 +75,9 @@ const skills = [
       </div>
     ))}
   </div>
+</div>
+
+
 </div>
 
 
